@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepare": "webpack",
+    "deploy": "gh-pages -d . --remove node_modules",
     "watch": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,9 +14,10 @@
   "private": true,
   "devDependencies": {
     "@types/arcgis-js-api": "^4.11.0",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.16.4",
     "ts-loader": "^5.3.3",
-    "tslint": "^5.14.0",
+    "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.4.1",
