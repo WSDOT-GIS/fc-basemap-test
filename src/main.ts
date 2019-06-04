@@ -9,6 +9,7 @@ import Expand from "esri/widgets/Expand";
 import Home from "esri/widgets/Home";
 import LayerList from "esri/widgets/LayerList";
 import Search from "esri/widgets/Search";
+import { createSourceLink } from "./github-link";
 
 /**
  * Extent of WA.
@@ -84,3 +85,5 @@ const legendExpand = new Expand({
 });
 
 view.ui.add(legendExpand, "top-right");
+
+view.ui.add(createSourceLink(), "bottom-right");
