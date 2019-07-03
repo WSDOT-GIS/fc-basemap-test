@@ -1,0 +1,27 @@
+{
+  "name": "fc-bm-test",
+  "version": "0.0.0",
+  "description": "Functional Class basemap test",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "webpack",
+    "deploy": "gh-pages -d . --remove node_modules",
+    "lint": "tslint -p . --fix",
+    "watch": "webpack -w"
+  },
+  "author": "Jeff Jacobson",
+  "license": "Unlicense",
+  "private": true,
+  "devDependencies": {
+    "@types/arcgis-js-api": "^4.11.0",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
+}
